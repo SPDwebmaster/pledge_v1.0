@@ -1,0 +1,64 @@
+.dash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.loader {
+    border-top: 16px solid gold;
+    border-right: 16px solid rgb(95, 95, 95);
+    border-bottom: 16px solid gold;
+    border-left: 16px solid rgb(95, 95, 95);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mark {
+    width: 20pt;
+}
+
+.black {
+}
+
+.white {
+    filter: invert(1);
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+table {
+    background-color: gold;
+    width: 95%;
+}
+
+details {
+    color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        width: 95vw;
+    }
+    .mark {
+        width: 4.3vmin;
+    }
+  }
+
+th, td {
+    background-color: rgb(160, 160, 160);
+    text-align: left;
+}
+
+td:hover {
+    background-color: rgb(243, 255, 81);
+}

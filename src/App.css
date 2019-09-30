@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  font-family: copperplate, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background-color: #bf1e2e;
+  border-left: 10px black;
+}
+
+.pic {
+  width: 800px;
+}
+.bg {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .pic {
+    width: 100vw;
+  }
+}
+
+
+.App-header {
+  background-color: rgb(68, 68, 68);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #09d3ac;
+}
