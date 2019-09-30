@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/pledge/static/css/main.eb99b318.chunk.css",
+    "main.js": "/pledge/static/js/main.c41ce596.chunk.js",
+    "main.js.map": "/pledge/static/js/main.c41ce596.chunk.js.map",
+    "runtime-main.js": "/pledge/static/js/runtime-main.3daffb55.js",
+    "runtime-main.js.map": "/pledge/static/js/runtime-main.3daffb55.js.map",
+    "static/js/2.a79ca60e.chunk.js": "/pledge/static/js/2.a79ca60e.chunk.js",
+    "static/js/2.a79ca60e.chunk.js.map": "/pledge/static/js/2.a79ca60e.chunk.js.map",
+    "index.html": "/pledge/index.html",
+    "precache-manifest.37a1e11aa7830ff3cc30712142ce2f3d.js": "/pledge/precache-manifest.37a1e11aa7830ff3cc30712142ce2f3d.js",
+    "service-worker.js": "/pledge/service-worker.js",
+    "static/css/main.eb99b318.chunk.css.map": "/pledge/static/css/main.eb99b318.chunk.css.map",
+    "static/media/bg.jpg": "/pledge/static/media/bg.466e9730.jpg",
+    "static/media/spdpic.jpg": "/pledge/static/media/spdpic.13f55879.jpg"
+  }
+}
