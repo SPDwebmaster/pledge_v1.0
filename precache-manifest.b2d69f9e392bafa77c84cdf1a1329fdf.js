@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44e412b04f46e3f4e10fbc9487958aee",
+    "revision": "e78705211a94598fdf80c5986f801ff0",
     "url": "/pledge/index.html"
   },
   {
-    "revision": "a47c869cfeabc48128c2",
+    "revision": "41834e2c045dda14df1c",
     "url": "/pledge/static/css/main.eb99b318.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pledge/static/js/2.a79ca60e.chunk.js"
   },
   {
-    "revision": "a47c869cfeabc48128c2",
-    "url": "/pledge/static/js/main.c41ce596.chunk.js"
+    "revision": "41834e2c045dda14df1c",
+    "url": "/pledge/static/js/main.21ae812d.chunk.js"
   },
   {
     "revision": "16cf8e09f437947d6157",
