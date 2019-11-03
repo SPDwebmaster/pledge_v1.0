@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pledge/static/css/main.ce0a3e10.chunk.css",
-    "main.js": "/pledge/static/js/main.c3abe338.chunk.js",
-    "main.js.map": "/pledge/static/js/main.c3abe338.chunk.js.map",
+    "main.css": "/pledge/static/css/main.8b6255f2.chunk.css",
+    "main.js": "/pledge/static/js/main.2d305abe.chunk.js",
+    "main.js.map": "/pledge/static/js/main.2d305abe.chunk.js.map",
     "runtime-main.js": "/pledge/static/js/runtime-main.3daffb55.js",
     "runtime-main.js.map": "/pledge/static/js/runtime-main.3daffb55.js.map",
     "static/js/2.a79ca60e.chunk.js": "/pledge/static/js/2.a79ca60e.chunk.js",
     "static/js/2.a79ca60e.chunk.js.map": "/pledge/static/js/2.a79ca60e.chunk.js.map",
     "index.html": "/pledge/index.html",
-    "precache-manifest.68021245f8a25fef5cf05628f4a13a3f.js": "/pledge/precache-manifest.68021245f8a25fef5cf05628f4a13a3f.js",
+    "precache-manifest.6c1cc7c66d58146a289360f5b8cf3bbc.js": "/pledge/precache-manifest.6c1cc7c66d58146a289360f5b8cf3bbc.js",
     "service-worker.js": "/pledge/service-worker.js",
-    "static/css/main.ce0a3e10.chunk.css.map": "/pledge/static/css/main.ce0a3e10.chunk.css.map",
+    "static/css/main.8b6255f2.chunk.css.map": "/pledge/static/css/main.8b6255f2.chunk.css.map",
     "static/media/bg.jpg": "/pledge/static/media/bg.466e9730.jpg",
     "static/media/spdpic.jpg": "/pledge/static/media/spdpic.13f55879.jpg"
   }
