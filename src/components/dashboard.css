@@ -23,6 +23,7 @@
 
 .mark {
     width: 20pt;
+    opacity: 70%;
 }
 
 .black {
@@ -32,17 +33,36 @@
     filter: invert(1);
 }
 
-table, th, td {
-    border: 2px solid black;
+table {
+    border-radius: 8px;
+    border-collapse: collapse;
 }
+
+/* , th, td {
+} */
 
 table {
-    background-color: gold;
     width: 95%;
+    border: none;
 }
 
-details {
-    color: blue;
+.details {
+    background-color: rgba(255, 127, 127, 0.19);
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+td {
+    max-width: 150px;
+}
+
+
+th {
+    min-width: 200px;
+    height: 40px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -52,13 +72,13 @@ details {
     .mark {
         width: 4.3vmin;
     }
+    th {
+        min-width: 90px;
+        height: 40px;
+    }
   }
 
-th, td {
-    background-color: rgb(160, 160, 160);
-    text-align: left;
-}
 
-td:hover {
-    background-color: rgb(243, 255, 81);
+tr:hover {
+    background-color: rgba(77, 77, 77, 0.288);
 }
