@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pledge/static/css/main.f323c6d2.chunk.css",
+    "main.css": "/pledge/static/css/main.52dbddc7.chunk.css",
     "main.js": "/pledge/static/js/main.e37985d9.chunk.js",
     "main.js.map": "/pledge/static/js/main.e37985d9.chunk.js.map",
     "runtime-main.js": "/pledge/static/js/runtime-main.05eb9ba2.js",
@@ -8,13 +8,13 @@
     "static/js/2.d56a882e.chunk.js": "/pledge/static/js/2.d56a882e.chunk.js",
     "static/js/2.d56a882e.chunk.js.map": "/pledge/static/js/2.d56a882e.chunk.js.map",
     "index.html": "/pledge/index.html",
-    "static/css/main.f323c6d2.chunk.css.map": "/pledge/static/css/main.f323c6d2.chunk.css.map",
+    "static/css/main.52dbddc7.chunk.css.map": "/pledge/static/css/main.52dbddc7.chunk.css.map",
     "static/js/2.d56a882e.chunk.js.LICENSE.txt": "/pledge/static/js/2.d56a882e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.05eb9ba2.js",
     "static/js/2.d56a882e.chunk.js",
-    "static/css/main.f323c6d2.chunk.css",
+    "static/css/main.52dbddc7.chunk.css",
     "static/js/main.e37985d9.chunk.js"
   ]
 }
