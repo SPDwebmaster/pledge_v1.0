@@ -26,8 +26,9 @@ export default class DashBoard extends React.Component {
     async getData() {
         readRemoteFile("https://docs.google.com/spreadsheets/d/e/2PACX-1vSpxL9XbExMZrEAPfB_XfmTxVTyNxsso7g0hUNOyyA0oeobOezWDIUZM_-391nV0dXZdtcUxCI1MpNT/pub?gid=1223749629&single=true&output=csv", {
             complete: (results) => {
+                console.log(results)
                 let submissionData = results.data.slice(1)
-                let pledge_class_name = results.data[1][16]
+                let pledge_class_name = results.data[1]?.[16]
                 
                 this.props.setPledgeClassName(pledge_class_name + " Pledge Class")
 
