@@ -5,15 +5,15 @@ import Marks from './marks'
 import './dashboard.css'
 
 const COL_DATE = 0
-const COL_PLEDGE_NAME = 2
+const COL_PLEDGE_NAME = 1
+const COL_SUBMISSION_TYPE = 2
 const COL_BROTHER_NAME = 3
-const COL_SUBMISSION_TYPE = 4
 const COL_MARK_TYPE = 5
 const COL_MARK_COUNT = 6
 const COL_DESCRIPTION = 7
-const COL_APPROVED = 15
+const COL_APPROVED = 9
 
-const KEY_IS_MARK = "White/Black Mark"
+const KEY_IS_MARK = "White/Black Mark (For Brothers)"
 
 export default class DashBoard extends React.Component {
     constructor(props) {
@@ -24,7 +24,7 @@ export default class DashBoard extends React.Component {
     }
 
     async getData() {
-        readRemoteFile("https://docs.google.com/spreadsheets/d/e/2PACX-1vSpxL9XbExMZrEAPfB_XfmTxVTyNxsso7g0hUNOyyA0oeobOezWDIUZM_-391nV0dXZdtcUxCI1MpNT/pub?gid=1223749629&single=true&output=csv", {
+        readRemoteFile("https://docs.google.com/spreadsheets/d/e/2PACX-1vS56TGOEovEdZVdkpp3SeRdjiFib3eGias1SffqEC3fu_WCvWOhtg1TtxoB4-ijC898UtUK7nfCwwYR/pub?output=csv", {
             complete: (results) => {
                 console.log(results)
                 let submissionData = results.data.slice(1)
