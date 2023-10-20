@@ -22,15 +22,14 @@ export default class DashBoard extends React.Component {
         autobind(this);
         this.getData();
     }
-
     async getData() {
-        readRemoteFile("https://docs.google.com/spreadsheets/d/e/2PACX-1vS56TGOEovEdZVdkpp3SeRdjiFib3eGias1SffqEC3fu_WCvWOhtg1TtxoB4-ijC898UtUK7nfCwwYR/pub?output=csv", {
+        readRemoteFile("https://docs.google.com/spreadsheets/d/e/2PACX-1vTpZTBbl4UauVo_30ZTW-rp4xYPm_NiKDAyWAp-yOyFYUY8Se7RZqaWfJIBuBI2vFNpcJnUbfTRPp0u/pub?output=csv", {
             complete: (results) => {
                 console.log(results)
                 let submissionData = results.data.slice(1)
                 let pledge_class_name = results.data[1]?.[16]
                 
-                this.props.setPledgeClassName("Σ Class")
+                this.props.setPledgeClassName("T Class")
 
                 const marks = submissionData.filter(row => row[COL_SUBMISSION_TYPE] === KEY_IS_MARK && row[COL_APPROVED] === "yes").map(row => new Mark(new Date(row[COL_DATE]).toDateString(), row[COL_BROTHER_NAME], row[COL_PLEDGE_NAME], row[COL_MARK_TYPE], parseInt(row[COL_MARK_COUNT]), row[COL_DESCRIPTION], row[COL_APPROVED]))
                 const pledgeDict = {}
