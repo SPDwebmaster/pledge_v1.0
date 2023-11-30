@@ -12,7 +12,6 @@ const mark_images = [m1,m2,m3,m4,m5];
 export default class Marks extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {pc: null};
         autobind(this);
     }
 
@@ -25,7 +24,7 @@ export default class Marks extends React.Component {
 
         let Mark = (i, img) => {
             return(
-                <img className={`${this.props.type} mark`} key={`mark${i}`} src={img} alt="mark"/>
+                <img className={`${this.props.type.toLowerCase()} mark`} key={`mark${i}`} src={img} alt="mark"/>
             )
         }
 

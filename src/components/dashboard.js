@@ -5,15 +5,15 @@ import Marks from './marks'
 import './dashboard.css'
 
 const COL_DATE = 0
-const COL_PLEDGE_NAME = 2
+const COL_PLEDGE_NAME = 1
+const COL_SUBMISSION_TYPE = 2
 const COL_BROTHER_NAME = 3
-const COL_SUBMISSION_TYPE = 4
 const COL_MARK_TYPE = 5
 const COL_MARK_COUNT = 6
 const COL_DESCRIPTION = 7
-const COL_APPROVED = 15
+const COL_APPROVED = 9
 
-const KEY_IS_MARK = "White/Black Mark"
+const KEY_IS_MARK = "White/Black Mark (For Brothers)"
 
 export default class DashBoard extends React.Component {
     constructor(props) {
@@ -22,14 +22,14 @@ export default class DashBoard extends React.Component {
         autobind(this);
         this.getData();
     }
-
     async getData() {
-        readRemoteFile("https://docs.google.com/spreadsheets/d/e/2PACX-1vSpxL9XbExMZrEAPfB_XfmTxVTyNxsso7g0hUNOyyA0oeobOezWDIUZM_-391nV0dXZdtcUxCI1MpNT/pub?gid=1223749629&single=true&output=csv", {
+        readRemoteFile("https://docs.google.com/spreadsheets/d/e/2PACX-1vTpZTBbl4UauVo_30ZTW-rp4xYPm_NiKDAyWAp-yOyFYUY8Se7RZqaWfJIBuBI2vFNpcJnUbfTRPp0u/pub?output=csv", {
             complete: (results) => {
+                console.log(results)
                 let submissionData = results.data.slice(1)
-                let pledge_class_name = results.data[1][16]
+                let pledge_class_name = results.data[1]?.[16]
                 
-                this.props.setPledgeClassName(pledge_class_name + " Pledge Class")
+                this.props.setPledgeClassName("lag;asdjg;odsg;n Class")
 
                 const marks = submissionData.filter(row => row[COL_SUBMISSION_TYPE] === KEY_IS_MARK && row[COL_APPROVED] === "yes").map(row => new Mark(new Date(row[COL_DATE]).toDateString(), row[COL_BROTHER_NAME], row[COL_PLEDGE_NAME], row[COL_MARK_TYPE], parseInt(row[COL_MARK_COUNT]), row[COL_DESCRIPTION], row[COL_APPROVED]))
                 const pledgeDict = {}

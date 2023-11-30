@@ -1,3 +1,16 @@
+## Updating Code (for Webmaster)
+
+The link to the .csv file can be found in **dashboard.js**.<br>
+
+1) Go to the **Pledge Submission Form** Google Sheet. It should follow a specific format (see previous classes to check format).<br>
+2) Ensure that the **Approved** column only reads yes or no. **MUST BE LOWER CASE**.<br>
+3) In the spread sheet, go to File->Share->Publish to web.<br>
+4) In the **Web page** drop down select **Comma-separated values (.csv)**.<br>
+5) Copy the link and insert in the code.<br>
+
+
+## React Information
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
