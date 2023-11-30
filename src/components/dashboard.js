@@ -29,7 +29,7 @@ export default class DashBoard extends React.Component {
                 let submissionData = results.data.slice(1)
                 let pledge_class_name = results.data[1]?.[16]
                 
-                this.props.setPledgeClassName("T Class")
+                this.props.setPledgeClassName("lag;asdjg;odsg;n Class")
 
                 const marks = submissionData.filter(row => row[COL_SUBMISSION_TYPE] === KEY_IS_MARK && row[COL_APPROVED] === "yes").map(row => new Mark(new Date(row[COL_DATE]).toDateString(), row[COL_BROTHER_NAME], row[COL_PLEDGE_NAME], row[COL_MARK_TYPE], parseInt(row[COL_MARK_COUNT]), row[COL_DESCRIPTION], row[COL_APPROVED]))
                 const pledgeDict = {}
